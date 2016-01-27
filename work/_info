@@ -9,36 +9,35 @@ z2
 cModel Technology
 dC:/altera/15.0
 Ecomments_fsm
-Z0 w1453856150
+Z0 w1453922788
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z4 dC:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM
-Z5 8C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm.vhd
-Z6 FC:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm.vhd
+Z4 dP:/ComArch&Org/Assignemnt1_FSM
+Z5 8fsm.vhd
+Z6 Ffsm.vhd
 l0
 L6
-VhOhS2`nooT@aUJG_HLIIV1
+Vc1Wc<M<>:0>4Dk1@zT]1N0
 !s100 8=ZD8]48;k_fm406>Zj^M1
-Z7 OP;C;10.4a;61
+Z7 OV;C;10.3d;59
 32
-Z8 !s110 1453865860
+Z8 !s110 1453922966
 !i10b 1
-Z9 !s108 1453865860.000000
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm.vhd|
-Z11 !s107 C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm.vhd|
+Z9 !s108 1453922966.010000
+Z10 !s90 -reportprogress|300|fsm.vhd|
+Z11 !s107 fsm.vhd|
 !i113 1
-Z12 o-work work -2002 -explicit -O0
-Z13 tExplicit 1
+Z12 tExplicit 1
 Abehavioral
 R1
 R2
 R3
-Z14 DEx4 work 12 comments_fsm 0 22 hOhS2`nooT@aUJG_HLIIV1
-l21
+DEx4 work 12 comments_fsm 0 22 c1Wc<M<>:0>4Dk1@zT]1N0
+l24
 L14
-Z15 V?LIhXU=EFci?0?C49RdfR0
-Z16 !s100 V<X3SE19]NoWXA]AUAV>A2
+V2>CmRA8?Go2nQiPYfP3=Y3
+!s100 24oYz]<9;]ZL2jh2oABa60
 R7
 32
 R8
@@ -48,43 +47,40 @@ R10
 R11
 !i113 1
 R12
-R13
 Efsm_tb
-Z17 w1453862944
+Z13 w1453922959
 R2
 R3
 R4
-Z18 8C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm_tb.vhd
-Z19 FC:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm_tb.vhd
+Z14 8fsm_tb.vhd
+Z15 Ffsm_tb.vhd
 l0
 L4
-VmEXBoFUaJ2P_ZzT:ABb?m3
+VU[B`;UO895C@51iMBJC:Q3
 !s100 RKDUZ0cXoY6_4:LXVza1h2
 R7
 32
 R8
 !i10b 1
-R9
-Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm_tb.vhd|
-Z21 !s107 C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm_tb.vhd|
+Z16 !s108 1453922966.425000
+Z17 !s90 -reportprogress|300|fsm_tb.vhd|
+Z18 !s107 fsm_tb.vhd|
 !i113 1
 R12
-R13
 Abehaviour
 R2
 R3
-DEx4 work 6 fsm_tb 0 22 mEXBoFUaJ2P_ZzT:ABb?m3
+DEx4 work 6 fsm_tb 0 22 U[B`;UO895C@51iMBJC:Q3
 l26
 L7
-Vo0Ki4Nzk[ZC0BFCBTNIco3
-!s100 `3?jPkX<l_8XM`_V?K6:C3
+Vdz=3A;ATo^M@kO0:MHn]o2
+Z19 !s100 ^GDbV0F?U8?dm@MH@P0mS1
 R7
 32
 R8
 !i10b 1
-R9
-R20
-R21
+R16
+R17
+R18
 !i113 1
 R12
-R13

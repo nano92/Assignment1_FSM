@@ -44,37 +44,37 @@ BEGIN
 	REPORT "Example case, reading a meaningless character";
 	s_input <= "01011000";
 	WAIT FOR 1 * clk_period;
-	--ASSERT (s_output = '0') REPORT "When reading a meaningless character, the output should be '0'" SEVERITY ERROR;
-	--REPORT "_______________________";
+	ASSERT (s_output = '0') REPORT "When reading a meaningless character, the output should be '0'" SEVERITY ERROR;
+	REPORT "_______________________";
 	
 	REPORT "Slash character";
-	s_input <= "00101111";
+	s_input <= SLASH_CHARACTER;
 	WAIT FOR 1 * clk_period;
-	--ASSERT (s_output = '0') REPORT "When reading a meaningless character, the output should be '0'" SEVERITY ERROR;
-	--REPORT "_______________________";
+	ASSERT (s_output = '0') REPORT "Not yet a comment" SEVERITY ERROR;
+	REPORT "_______________________";
 
 	REPORT "Slash character";
-	s_input <= "00101111";
+	s_input <= SLASH_CHARACTER;
 	WAIT FOR 1 * clk_period;
-	ASSERT (s_output = '0') REPORT "When reading a meaningless character, the output should be '0'" SEVERITY ERROR;
+	ASSERT (s_output = '0') REPORT "Next output should be 0" SEVERITY ERROR;
 	REPORT "_______________________";
 
 	REPORT "Letter A";
 	s_input <= "01000001";
 	WAIT FOR 1 * clk_period;
-	ASSERT (s_output = '0') REPORT "When reading a meaningless character, the output should be '0'" SEVERITY ERROR;
+	ASSERT (s_output = '1') REPORT "Comment" SEVERITY ERROR;
 	REPORT "_______________________";
 	
 	REPORT "Letter B";
 	s_input <= "01000010";
 	WAIT FOR 1 * clk_period;
-	ASSERT (s_output = '0') REPORT "When reading a meaningless character, the output should be '0'" SEVERITY ERROR;
+	ASSERT (s_output = '1') REPORT "Comment" SEVERITY ERROR;
 	REPORT "_______________________";
 
 	REPORT "New line character";
 	s_input <= "00001010";
 	WAIT FOR 1 * clk_period;
-	ASSERT (s_output = '0') REPORT "When reading a meaningless character, the output should be '0'" SEVERITY ERROR;
+	ASSERT (s_output = '1') REPORT "Comment" SEVERITY ERROR;
 	REPORT "_______________________";
 
     

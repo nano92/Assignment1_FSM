@@ -1,4 +1,12 @@
-{{C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm_tb.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm_tb.vhd}
+P:/ComArch&Org/Assignemnt1_FSM/fsm_tb.vhd {1 {vcom -work work -2002 -explicit -stats=none P:/ComArch&Org/Assignemnt1_FSM/fsm_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fsm_tb
+-- Compiling architecture behaviour of fsm_tb
+
+} {} {}} {{C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm_tb.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm_tb.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
 Start time: 22:37:32 on Jan 26,2016
 vcom -reportprogress 300 -work work -2002 -explicit C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm_tb.vhd 
@@ -10,13 +18,14 @@ vcom -reportprogress 300 -work work -2002 -explicit C:/Users/LuisEnrique/nano/EC
 End time: 22:37:33 on Jan 26,2016, Elapsed time: 0:00:01
 Errors: 0, Warnings: 0
 
-} {} {}} {C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm_tb.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm_tb.vhd}
-Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+} {} {}} P:/ComArch&Org/Assignemnt1_FSM/fsm.vhd {1 {vcom -work work -2002 -explicit -stats=none P:/ComArch&Org/Assignemnt1_FSM/fsm.vhd
+Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity fsm_tb
--- Compiling architecture behaviour of fsm_tb
+-- Loading package NUMERIC_STD
+-- Compiling entity comments_fsm
+-- Compiling architecture behavioral of comments_fsm
 
 } {} {}} {{C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/LuisEnrique/nano/ECSE 425/Assignment1_FSM/fsm.vhd}
 Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015

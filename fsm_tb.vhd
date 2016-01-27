@@ -76,6 +76,13 @@ BEGIN
 	WAIT FOR 1 * clk_period;
 	ASSERT (s_output = '1') REPORT "Comment" SEVERITY ERROR;
 	REPORT "_______________________";
+ 
+	REPORT "Letter A";
+	s_input <= "01000001";
+	WAIT FOR 1 * clk_period;
+	ASSERT (s_output = '0') REPORT "Comment" SEVERITY ERROR;
+	REPORT "_______________________";
+
 
     
 	WAIT;
