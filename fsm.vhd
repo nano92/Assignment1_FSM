@@ -18,12 +18,54 @@ constant SLASH_CHARACTER : std_logic_vector(7 downto 0) := "00101111";
 constant STAR_CHARACTER : std_logic_vector(7 downto 0) := "00101010";
 constant NEW_LINE_CHARACTER : std_logic_vector(7 downto 0) := "00001010";
 
+type STATE_TYPE is (idle, s1, s2, s3);
+signal state: STATE_TYPE;
+
 begin
 
 -- Insert your processes here
-process (clk, reset)
+process (clk, reset, input)
+variable past_input : std_logic_vector(7 downto 0); --To store the previous input value
 begin
-    output <= clk;
+	if (reset = '1') then
+		state <= idle;
+	elsif (rising_edge(clk) AND reset = '0') then
+	
+	case state is
+		when idle=>
+		if(reset = '0') then
+		state <= s1;
+		end if;
+
+		when s1=>
+		past_input := input; 
+		if (input = SLASH_CHARACTER) then
+		output <= '0';
+		state <= s2;
+		else
+		output <= '1';
+		state <= s1;
+		end if;
+		
+		when s2 =>
+		if((input = SLASH_CHARACTER OR input = STAR_CHARACTER) AND past_input = SLASH_CHARACTER) then
+		output <= '0';
+		state <= s3;
+		else
+		output <= '1';
+		state <= s1;
+		end if;
+
+		when s3 =>
+		if(input = NEW_LINE_CHARACTER AND past_input /= SLASH_CHARACTER) then
+		output <= 1;
+		else
+		output <= 0;
+		state <= s1;
+		end if;
+end if;
 end process;
+
+
 
 end behavioral;
